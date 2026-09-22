@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "binaire-freznel-assessment-client",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

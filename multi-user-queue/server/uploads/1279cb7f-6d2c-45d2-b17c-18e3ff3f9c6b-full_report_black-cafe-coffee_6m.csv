@@ -1,0 +1,29 @@
+--- ROLE-WISE EXPENSES ---
+Role,Unique Headcount,Total Cost (INR)
+kitchen head,1,452000.00
+head,1,212333.33
+store manager,1,188416.67
+chef,1,134333.33
+cashier,1,94666.67
+Head Chef,1,0.00
+Other,1,0.00
+Cashier,1,0.00
+
+--- PAYROLL TRENDS ---
+Month,Overtime Pay,Total Payroll Cost
+Mar,0.00,0.00
+Apr,0.00,0.00
+May,0.00,271000.00
+Jun,0.00,271000.00
+Jul,750.00,270416.67
+Aug,0.00,269333.33
+
+--- ATTENDANCE INSIGHTS ---
+Avg Attendance Rate (%),99.25
+Total Overtime Hrs,12.00
+
+--- LEAVE RECORDS ---
+Employee Name,Total Leave Days
+bcdwhc cdd,8
+Priya  SHarma,2
+monu kathait,1
