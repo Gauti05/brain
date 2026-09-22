@@ -14,10 +14,11 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "*",
     methods: ["GET", "POST"]
   }
 });
+
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -46,7 +47,7 @@ class Task {
 class QueueManager {
   constructor(io) {
     this.queue = [];
-    this.allTasks = new Map(); // Keep track of all tasks for the dashboard
+    this.allTasks = new Map();
     this.isProcessing = false;
     this.io = io;
   }
@@ -70,8 +71,7 @@ class QueueManager {
       if (this.allTasks.get(task.processId).status === 'File added to queue') {
         this.updateTaskState(task.processId, `Waiting for processing (ID: ${task.processId})`, 0);
       }
-    }, 1000); // Small delay to show the "File added to queue" state briefly
-
+    }, 1000);
     this.processNext();
   }
 
